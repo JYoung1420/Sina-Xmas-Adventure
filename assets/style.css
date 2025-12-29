@@ -1,0 +1,87 @@
+:root{
+  --bg:#fff6f8;
+  --card:#fffafc;
+  --text:#241f1a;
+  --accent:#c23b5a;   /* pinkish-red */
+  --accent2:#2f6fb1;  /* soft blue */
+  --border: rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; padding:24px;
+  font-family: ui-rounded, "SF Pro Rounded", "Avenir Next", "Trebuchet MS", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.55;
+  background: var(--bg);
+  color: var(--text);
+}
+a{ color: var(--accent2); }
+a:hover{ filter: brightness(0.9); }
+
+.card{
+  max-width: 820px;
+  margin: 0 auto;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 22px 22px 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  position: relative;
+}
+
+.card.has-nav{
+  padding-top: 64px;
+}
+h1,h2{ margin:0 0 10px; }
+p{ margin: 0 0 14px; white-space: normal; }
+
+.home{
+  position:absolute;
+  top:14px; right:14px;
+  text-decoration:none;
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.65);
+  color: var(--accent2);
+  font-weight: 650;
+}
+.home:hover{ background: rgba(255,255,255,.9); }
+
+.choices{
+  display:grid;
+  gap:10px;
+  margin: 14px 0 6px;
+}
+.choice{
+  display:block;
+  padding: 12px 14px;
+  border-radius: 14px;
+  text-decoration:none;
+  border: 1px solid rgba(194,59,90,.25);
+  background: rgba(194,59,90,.06);
+  color: var(--accent);
+  font-weight: 700;
+}
+.choice:hover{
+  background: rgba(47,111,177,.08);
+  border-color: rgba(47,111,177,.25);
+  color: var(--accent2);
+}
+.meta{
+  margin-top: 10px;
+  font-size: .92rem;
+  opacity: .7;
+}
+
+.back{
+  position:absolute;
+  top:14px; left:14px;
+  border:1px solid rgba(0,0,0,.10);
+  background: rgba(255,255,255,.65);
+  color: var(--accent2);
+  font-weight:650;
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor:pointer;
+}
+.back:hover{ filter: brightness(1.03); }
